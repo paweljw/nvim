@@ -12,6 +12,8 @@ Plug 'neomake/neomake'
 Plug 'juanedi/predawn.vim'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -19,7 +21,7 @@ syntax on
 filetype plugin indent on
 
 colorscheme predawn
-let g:molokai_original = 1
+let g:airline_theme='bubblegum'
 
 if has('nvim')
    set ttimeout
