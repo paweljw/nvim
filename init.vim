@@ -14,11 +14,17 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'alvan/vim-closetag'
+Plug 'Raimondi/delimitMate'
 
 call plug#end()
 
 syntax on
 filetype plugin indent on
+
+" Enable riddiculously good completion
+call deoplete#enable()
 
 colorscheme predawn
 let g:airline_theme='bubblegum'
@@ -27,7 +33,6 @@ if has('nvim')
    set ttimeout
    set ttimeoutlen=0
 endif
-
 
 " I am a weak man
 set mouse=a
@@ -63,3 +68,10 @@ nnoremap <Leader>k :NERDTreeToggle<CR>
 
 " Chill with the folding, jeeze
 let g:vim_markdown_folding_disabled = 1
+
+" New file
+nnoremap <Leader>nf :tabedit<SPACE>
+
+" Autoclosing HTML tags
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
+let delimitMate_excluded_ft = "html"
