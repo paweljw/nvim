@@ -17,6 +17,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'alvan/vim-closetag'
 Plug 'Raimondi/delimitMate'
+Plug 'posva/vim-vue'
 
 call plug#end()
 
