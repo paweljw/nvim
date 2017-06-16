@@ -33,9 +33,8 @@ let deoplete#tag#cache_limit_size = 50000000
 let g:deoplete#sources = {}
 let g:deoplete#sources._ = ['buffer', 'tag']
 
-inoremap <silent><expr> <Tab>
-\ pumvisible() ? "\<C-n>" :
-\ deoplete#mappings#manual_complete()
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 " Deoplete end
 
 colorscheme predawn
