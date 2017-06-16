@@ -15,9 +15,11 @@ Plug 'plasticboy/vim-markdown'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'fishbullet/deoplete-ruby'
 Plug 'alvan/vim-closetag'
 Plug 'Raimondi/delimitMate'
 Plug 'posva/vim-vue'
+Plug 'ludovicchabant/vim-gutentags'
 
 call plug#end()
 
@@ -25,7 +27,16 @@ syntax on
 filetype plugin indent on
 
 " Enable riddiculously good completion
-call deoplete#enable()
+"" call deoplete#enable()
+let g:deoplete#enable_at_startup = 1
+let deoplete#tag#cache_limit_size = 50000000
+let g:deoplete#sources = {}
+let g:deoplete#sources._ = ['buffer', 'tag']
+
+inoremap <silent><expr> <Tab>
+\ pumvisible() ? "\<C-n>" :
+\ deoplete#mappings#manual_complete()
+" Deoplete end
 
 colorscheme predawn
 let g:airline_theme='bubblegum'
