@@ -20,22 +20,14 @@ Plug 'alvan/vim-closetag'
 Plug 'Raimondi/delimitMate'
 Plug 'posva/vim-vue'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'sheerun/vim-polyglot'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 call plug#end()
 
 syntax on
 filetype plugin indent on
-
-" Enable riddiculously good completion
-"" call deoplete#enable()
-let g:deoplete#enable_at_startup = 1
-let deoplete#tag#cache_limit_size = 50000000
-let g:deoplete#sources = {}
-let g:deoplete#sources._ = ['buffer', 'tag']
-
-autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-" Deoplete end
 
 colorscheme predawn
 let g:airline_theme='bubblegum'
@@ -51,6 +43,7 @@ set mouse=a
 " Clipboard stuff
 set clipboard=unnamed
 
+" Segmented configs
 source ~/.config/nvim/config/defaults.vim
 source ~/.config/nvim/config/keys.vim
 source ~/.config/nvim/config/die-arrows-die.vim
@@ -58,9 +51,9 @@ source ~/.config/nvim/config/tabs.vim
 source ~/.config/nvim/config/splits.vim
 source ~/.config/nvim/config/ctrlp.vim
 source ~/.config/nvim/config/neomake.vim
+source ~/.config/nvim/config/deoplete.vim
 
 " GitGutter stuff
-
 let g:gitgutter_sign_modified = '•'
 let g:gitgutter_sign_added = '❖'
 highlight GitGutterAdd guifg = '#A3E28B'
