@@ -38,7 +38,7 @@ if has('nvim')
 endif
 
 " I am a weak man
-set mouse=a
+" set mouse=a
 
 " Clipboard stuff
 set clipboard=unnamed
@@ -52,6 +52,7 @@ source ~/.config/nvim/config/splits.vim
 source ~/.config/nvim/config/ctrlp.vim
 source ~/.config/nvim/config/neomake.vim
 source ~/.config/nvim/config/deoplete.vim
+source ~/.config/nvim/config/fizzbuzz.vim
 
 " GitGutter stuff
 let g:gitgutter_sign_modified = '•'
