@@ -24,11 +24,17 @@ Plug 'sheerun/vim-polyglot'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'ayu-theme/ayu-vim'
+Plug 'Yggdroot/indentLine'
 
 call plug#end()
 
 syntax on
 filetype plugin indent on
+
+let g:indentLine_char = '│'
+let g:indentLine_first_char = '│'
+let g:indentLine_showFirstIndentLevel = 1
+let g:indentLine_setColors = 0
 
 set termguicolors
 let ayucolor="mirage"
