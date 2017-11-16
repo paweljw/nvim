@@ -23,13 +23,17 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'sheerun/vim-polyglot'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
 
 syntax on
 filetype plugin indent on
 
-colorscheme predawn
+set termguicolors
+let ayucolor="mirage"
+colorscheme ayu
+
 let g:airline_theme='bubblegum'
 
 if has('nvim')
@@ -38,7 +42,7 @@ if has('nvim')
 endif
 
 " I am a weak man
-" set mouse=a
+set mouse=a
 
 " Clipboard stuff
 set clipboard=unnamed
