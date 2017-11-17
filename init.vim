@@ -25,6 +25,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'ayu-theme/ayu-vim'
 Plug 'Yggdroot/indentLine'
+Plug 'elixir-editors/vim-elixir'
 
 call plug#end()
 
