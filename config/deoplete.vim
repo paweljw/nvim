@@ -1,4 +1,4 @@
-" Enable riddiculously good completion
+" " Enable riddiculously good completion
 let g:deoplete#enable_at_startup = 1
 let deoplete#tag#cache_limit_size = 50000000
 let g:deoplete#sources = {}

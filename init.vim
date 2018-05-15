@@ -8,24 +8,20 @@ Plug 'vim-airline/vim-airline'  " line at the bottom
 Plug 'scrooloose/nerdtree'
 Plug 'benekastah/neomake'
 Plug 'justinmk/vim-gtfo'
-Plug 'neomake/neomake'
 Plug 'juanedi/predawn.vim'
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'tpope/vim-fugitive'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fishbullet/deoplete-ruby'
 Plug 'alvan/vim-closetag'
 Plug 'Raimondi/delimitMate'
 Plug 'posva/vim-vue'
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'sheerun/vim-polyglot'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 Plug 'ayu-theme/ayu-vim'
-Plug 'Yggdroot/indentLine'
 Plug 'elixir-editors/vim-elixir'
+Plug 'altercation/vim-colors-solarized'
+Plug 'Yggdroot/indentLine'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'SirVer/ultisnips'
 
 call plug#end()
 
@@ -38,10 +34,10 @@ let g:indentLine_showFirstIndentLevel = 1
 let g:indentLine_setColors = 0
 
 set termguicolors
-let ayucolor="mirage"
+let ayucolor="light"
 colorscheme ayu
 
-let g:airline_theme='bubblegum'
+let g:airline_theme='papercolor'
 
 if has('nvim')
    set ttimeout
@@ -89,5 +85,5 @@ let g:vim_markdown_folding_disabled = 1
 nnoremap <Leader>nf :tabedit<SPACE>
 
 " Autoclosing HTML tags
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb"
 let delimitMate_excluded_ft = "html"
