@@ -8,7 +8,6 @@ Plug 'vim-airline/vim-airline'  " line at the bottom
 Plug 'scrooloose/nerdtree'
 Plug 'benekastah/neomake'
 Plug 'justinmk/vim-gtfo'
-Plug 'juanedi/predawn.vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fishbullet/deoplete-ruby'
@@ -16,13 +15,15 @@ Plug 'alvan/vim-closetag'
 Plug 'Raimondi/delimitMate'
 Plug 'posva/vim-vue'
 Plug 'sheerun/vim-polyglot'
-Plug 'ayu-theme/ayu-vim'
-Plug 'elixir-editors/vim-elixir'
-Plug 'altercation/vim-colors-solarized'
+Plug 'elixir-lang/vim-elixir'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
+Plug 'janko-m/vim-test'
 Plug 'Yggdroot/indentLine'
-Plug 'NLKNguyen/papercolor-theme'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'kadekillary/subtle_solo'
+Plug 'tpope/vim-obsession'
 
 call plug#end()
 
@@ -32,13 +33,13 @@ filetype plugin indent on
 let g:indentLine_char = '│'
 let g:indentLine_first_char = '│'
 let g:indentLine_showFirstIndentLevel = 1
-let g:indentLine_setColors = 0
+let g:indentLine_bgcolor_term = 1
+let g:indentLine_color_tty_light = 7 " (default: 4)
+let g:indentLine_color_dark = 1 " (default: 2)
 
 set termguicolors
-let ayucolor="light"
-colorscheme ayu
-
-let g:airline_theme='papercolor'
+colorscheme subtle_light
+let g:airline_theme='solarized'
 
 if has('nvim')
    set ttimeout
