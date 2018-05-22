@@ -17,13 +17,10 @@ Plug 'posva/vim-vue'
 Plug 'sheerun/vim-polyglot'
 Plug 'elixir-lang/vim-elixir'
 Plug 'vim-ruby/vim-ruby'
-Plug 'tpope/vim-rails'
-Plug 'janko-m/vim-test'
 Plug 'Yggdroot/indentLine'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'kadekillary/subtle_solo'
-Plug 'tpope/vim-obsession'
 
 call plug#end()
 
