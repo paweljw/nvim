@@ -38,6 +38,9 @@ set termguicolors
 colorscheme subtle_light
 let g:airline_theme='solarized'
 
+set lazyredraw
+set synmaxcol=125
+
 if has('nvim')
    set ttimeout
    set ttimeoutlen=0
