@@ -4,18 +4,12 @@ let mapleader = "\<Space>"
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>u :u<CR>
 nnoremap <Leader>q :q<CR>
+nnoremap <Leader>wqa :wqa<CR>
 
 nmap <Leader><Leader> V
 
 " vim-commentary stuff
 nmap <Leader>cc <Plug>CommentaryLine
-
-" vim-test
-nmap <silent> t<C-n> :TestNearest<CR> " t Ctrl+n
-nmap <silent> t<C-f> :TestFile<CR>    " t Ctrl+f
-nmap <silent> t<C-s> :TestSuite<CR>   " t Ctrl+s
-nmap <silent> t<C-l> :TestLast<CR>    " t Ctrl+l
-nmap <silent> t<C-g> :TestVisit<CR>   " t Ctrl+g<Paste>
 
 " moving lines
 nnoremap J :m .+1<CR>
@@ -23,3 +17,8 @@ nnoremap K :m .-2<CR>
 
 xnoremap J :m .+1<CR>
 xnoremap K :m .-2<CR>
+
+nnoremap vv :vsplit<Space>
+
+nmap <Leader>rm :!rm -rf<Space>
+nmap <Leader>mk :!mkdir<Space>

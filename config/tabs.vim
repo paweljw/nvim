@@ -7,7 +7,7 @@ nnoremap tl  :tablast<CR>
 nnoremap tt  :tabedit<Space>
 nnoremap tn  :tabnext<Space>
 nnoremap tm  :tabm<Space>
-nnoremap td  :tabclose<CR>
+nnoremap tq  :tabclose<CR>
 
 noremap <C-1> :tabn 1<CR>
 noremap <C-2> :tabn 2<CR>

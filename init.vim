@@ -4,28 +4,26 @@ Plug 'kien/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 Plug 'rking/ag.vim'
-Plug 'vim-airline/vim-airline'  " line at the bottom
+Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'benekastah/neomake'
-Plug 'justinmk/vim-gtfo'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fishbullet/deoplete-ruby'
 Plug 'alvan/vim-closetag'
 Plug 'Raimondi/delimitMate'
-Plug 'posva/vim-vue'
 Plug 'sheerun/vim-polyglot'
-Plug 'elixir-lang/vim-elixir'
-Plug 'vim-ruby/vim-ruby'
 Plug 'Yggdroot/indentLine'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'kadekillary/subtle_solo'
+Plug 'tpope/vim-rails'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
 syntax on
 filetype plugin indent on
+
+set noerrorbells
+set novisualbell
 
 let g:indentLine_char = '│'
 let g:indentLine_first_char = '│'
@@ -35,11 +33,10 @@ let g:indentLine_color_tty_light = 7 " (default: 4)
 let g:indentLine_color_dark = 1 " (default: 2)
 
 set termguicolors
-colorscheme subtle_light
-let g:airline_theme='solarized'
+set background=dark
+colorscheme gruvbox
 
 set lazyredraw
-set synmaxcol=125
 
 if has('nvim')
    set ttimeout
@@ -82,18 +79,14 @@ nnoremap <Leader>k :NERDTreeToggle<CR>
 
 " Chill with the folding, jeeze
 let g:vim_markdown_folding_disabled = 1
-
-" New file
-nnoremap <Leader>nf :tabedit<SPACE>
+let g:vim_markdown_conceal = 0
 
 " Autoclosing HTML tags
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb"
-let delimitMate_excluded_ft = "html"
-
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb,*.vue"
+let delimitMate_excluded_ft = "html,vue"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+set colorcolumn=125
+
