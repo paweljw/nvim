@@ -16,6 +16,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'Yggdroot/indentLine'
 Plug 'tpope/vim-rails'
 Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 

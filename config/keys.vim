@@ -21,4 +21,6 @@ xnoremap K :m .-2<CR>
 nnoremap vv :vsplit<Space>
 
 nmap <Leader>rm :!rm -rf<Space>
-nmap <Leader>mk :!mkdir<Space>
+nmap <Leader>mm :!mkdir -p<Space>
+
+inoremap jj <Esc>
