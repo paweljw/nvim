@@ -3,20 +3,21 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'kien/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-surround'
 Plug 'rking/ag.vim'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug 'benekastah/neomake'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fishbullet/deoplete-ruby'
 Plug 'alvan/vim-closetag'
 Plug 'Raimondi/delimitMate'
 Plug 'sheerun/vim-polyglot'
 Plug 'Yggdroot/indentLine'
-Plug 'tpope/vim-rails'
-Plug 'morhetz/gruvbox'
-Plug 'tpope/vim-fugitive'
+Plug 'srcery-colors/srcery-vim'
 
 call plug#end()
 
@@ -30,12 +31,6 @@ let g:indentLine_char = '│'
 let g:indentLine_first_char = '│'
 let g:indentLine_showFirstIndentLevel = 1
 let g:indentLine_bgcolor_term = 1
-let g:indentLine_color_tty_light = 7 " (default: 4)
-let g:indentLine_color_dark = 1 " (default: 2)
-
-set termguicolors
-set background=dark
-colorscheme gruvbox
 
 set lazyredraw
 
@@ -91,3 +86,6 @@ let g:UltiSnipsEditSplit="vertical"
 
 set colorcolumn=125
 
+set termguicolors     " enable true colors support
+colorscheme srcery
+let g:airline_theme='srcery'

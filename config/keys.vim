@@ -4,7 +4,6 @@ let mapleader = "\<Space>"
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>u :u<CR>
 nnoremap <Leader>q :q<CR>
-nnoremap <Leader>wqa :wqa<CR>
 
 nmap <Leader><Leader> V
 
