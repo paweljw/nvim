@@ -18,6 +18,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'sheerun/vim-polyglot'
 Plug 'Yggdroot/indentLine'
 Plug 'srcery-colors/srcery-vim'
+Plug 'fatih/vim-go'
 
 call plug#end()
 
