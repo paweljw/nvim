@@ -19,8 +19,13 @@ Plug 'sheerun/vim-polyglot'
 Plug 'Yggdroot/indentLine'
 Plug 'srcery-colors/srcery-vim'
 Plug 'fatih/vim-go'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'uplus/deoplete-solargraph'
 
 call plug#end()
+
+let g:deoplete#enable_at_startup = 1
 
 syntax on
 filetype plugin indent on
@@ -89,6 +94,13 @@ set colorcolumn=125
 
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 
 set termguicolors     " enable true colors support
 set background=dark
