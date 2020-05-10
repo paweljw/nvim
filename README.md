@@ -1,4 +1,8 @@
-# Nvim
+# DEPRECATED
+
+This repository was superseded by [paweljw/dotfiles](https://github.com/paweljw/dotfiles)
+
+## Nvim
 
 My neovim configuration.
 
